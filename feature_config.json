@@ -1,0 +1,10 @@
+{
+    "my_function": {
+        "active": true,
+        "doc": "My cool new function"
+    },
+
+    "STANDARD": { 
+        "active": true 
+    }
+}
