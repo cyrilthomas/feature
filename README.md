@@ -2,7 +2,7 @@
 
 Using simple JSON based configurations
 
-`file: config.json`
+_file: config.json_
 ```json
 {
   "my_feature": {
@@ -11,7 +11,7 @@ Using simple JSON based configurations
   }
 }
 ```
-
+_file: app.py_
 ```python
 from feature import feature_with, feature_setup
 
@@ -29,8 +29,10 @@ if __name__ == '__main__':
 
 Or more complex python dictonary configurations
 
-`file: config.py`
+_file: config.py_
 ```python
+import datetime
+
 feat_config = {
   'my_feature': {
     'active': True,
@@ -43,10 +45,10 @@ feat_config = {
   }
 }
 ```
-
+_file: app.py_
 ```python
 from feature import feature_with, feature_setup
-import config.py
+import config
 
 @feature_with('experimental')
 def sum(a,b):
